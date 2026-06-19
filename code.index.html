@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>V K Digital Marketers</title>
+<style>
+/* Root Variables for consistent colors */
+:root {
+  --gold: #d4af37;
+  --dark-bg: #070707;
+}
+
+/* Base Styles */
+body {
+  margin: 0;
+  background: var(--dark-bg);
+  color: var(--gold);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+/* Navigation Bar */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  border-bottom: 2px solid var(--gold);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+.nav-logo {
+  height: 50px;
+  border-radius: 8px;
+  border: 1px solid var(--gold);
+  transition: transform 0.3s ease;
+}
+
+.nav-logo:hover {
+  transform: scale(1.05);
+}
+
+.nav-links a {
+  color: var(--gold);
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #fff;
+  text-shadow: 0 0 8px var(--gold);
+}
+
+/* Sections Configuration */
+section {
+  min-height: 100vh;
+  padding: 120px 10% 60px;
+  box-sizing: border-box;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background: radial-gradient(circle at center, #1a1a1a 0%, #070707 70%);
+}
+
+.hero .logo-main {
+  width: 220px;
+  border-radius: 20px;
+  border: 2px solid var(--gold);
+  box-shadow: 0 10px 30px rgba(212, 175, 55, 0.4);
+  margin-bottom: 30px;
+  transition: transform 0.3s ease;
+}
+
+.hero .logo-main:hover {
+  transform: translateY(-10px);
+}
+
+h1 {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--gold);
+  margin: 0 0 20px 0;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+  text-align: center;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #ddd;
+  margin-bottom: 30px;
+  max-width: 600px;
+}
+
+/* Grid Layout */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Safe 3D Cards */
+.card {
+  background: linear-gradient(145deg, #111, #0a0a0a);
+  padding: 30px;
+  border: 1px solid var(--gold);
+  border-radius: 15px;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.9), -5px -5px 15px rgba(255,255,255,0.02);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 20px 40px rgba(212, 175, 55, 0.2);
+  border-color: #fff;
+}
+
+.card h2, .card h3 {
+  color: #fff;
+  margin-top: 0;
+}
+
+.card p {
+  color: #bbb;
+  line-height: 1.6;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background: var(--gold);
+  color: #000;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  margin: 10px;
+  text-transform: uppercase;
+  box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(212, 175, 55, 0.6);
+}
+
+/* Portfolio Tags */
+.tag {
+  display: inline-block;
+  padding: 5px 10px;
+  background: rgba(212, 175, 55, 0.2);
+  border: 1px solid var(--gold);
+  border-radius: 5px;
+  font-size: 0.8rem;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .nav-container { flex-direction: column; }
+  .nav-links { margin-top: 15px; }
+  .nav-links a { margin: 0 10px; font-size: 0.8rem; }
+  h1 { font-size: 2.2rem; }
+  section { padding-top: 150px; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-container">
+    <a href="#home">
+      <img src="logo.png" alt="V K Logo" class="nav-logo">
+    </a>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<section id="home" class="hero">
+  <img src="logo.png" alt="V K Digital Marketers Logo" class="logo-main">
+  <h1>V K Digital Marketers</h1>
+  <p>Premium Website Design, Branding, and Growth Strategies.</p>
+  <div>
+    <a class="btn" href="https://wa.me/917989864704">WhatsApp</a>
+    <a class="btn" href="tel:7989864704">Call Now</a>
+  </div>
+</section>
+
+<section id="about">
+  <h1>About Us</h1>
+  <div class="grid" style="grid-template-columns: 1fr; max-width: 800px;">
+    <div class="card">
+      <h2>Who We Are</h2>
+      <p>We are V K Digital Marketers. We help businesses grow through premium websites, social media marketing, branding, promotional videos, and advanced digital strategies. Our team focuses on creating visually stunning designs that convert visitors into loyal customers.</p>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <h1>Our Services</h1>
+  <div class="grid">
+    <div class="card">
+      <h3>Website Design</h3>
+      <p>Modern, responsive, and premium websites built for performance and sales.</p>
+    </div>
+    <div class="card">
+      <h3>Business Videos</h3>
+      <p>Professional promotional and cinematic videos for your brand.</p>
+    </div>
+    <div class="card">
+      <h3>Social Media Marketing</h3>
+      <p>Targeted ads and account management for Instagram and Facebook.</p>
+    </div>
+    <div class="card">
+      <h3>Branding</h3>
+      <p>Custom logo design, brand identity, and graphic design.</p>
+    </div>
+  </div>
+</section>
+
+<section id="portfolio">
+  <h1>Portfolio</h1>
+  <div class="grid">
+    <div class="card">
+      <span class="tag">E-Commerce</span>
+      <h3>The Luxury Vault</h3>
+      <p>Custom web platform with high-end product displays, increasing sales by 140%.</p>
+    </div>
+    <div class="card">
+      <span class="tag">Branding</span>
+      <h3>Apex Neo-Branding</h3>
+      <p>Unified brand package, logo kit, and corporate identity for a major startup.</p>
+    </div>
+    <div class="card">
+      <span class="tag">Development</span>
+      <h3>NextGen Analytics</h3>
+      <p>Engineered a responsive tracking application featuring a premium gold dashboard.</p>
+    </div>
+    <div class="card">
+      <span class="tag">Marketing</span>
+      <h3>Vanguard Campaign</h3>
+      <p>Highly targeted video ad campaign yielding over 2.5 Million organic views.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h1>Contact Us</h1>
+  <div class="grid" style="grid-template-columns: 1fr; max-width: 600px;">
+    <div class="card">
+      <h2 style="color: var(--gold); margin-bottom: 20px;">Let's Work Together</h2>
+      <p style="font-size: 1.3rem;">📞 +91 7989864704</p>
+      <p style="font-size: 1.1rem; margin-bottom: 30px;">📧 sameerdudekula18@gmail.com</p>
+      <a class="btn" href="https://wa.me/917989864704">WhatsApp Us</a>
+      <a class="btn" href="mailto:sameerdudekula18@gmail.com">Email Us</a>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
